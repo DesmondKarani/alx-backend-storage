@@ -1,2 +1,1 @@
-#!/bin/bash
-mongo --eval "db.adminCommand('listDatabases')"
+
