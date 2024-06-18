@@ -1,2 +1,5 @@
--- Lists all DBs of MongoDB
-SHOW DATABASES;
+db.adminCommand(
+   {
+     listDatabases: 1
+   }
+)
