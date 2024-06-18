@@ -1,1 +1,2 @@
+// List DBs in MongoDB
 db.getMongo().getDBs().databases.forEach(function(d) { print(d.name + "\t" + (d.sizeOnDisk / 1024 / 1024 / 1024).toFixed(3) + "GB") })
