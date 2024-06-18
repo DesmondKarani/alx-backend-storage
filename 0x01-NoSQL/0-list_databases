@@ -1,2 +1,1 @@
-// List DBs in MongoDB
-db.adminCommand({ listDatabases: 1 }).databases.forEach(db => { print(db.name + "\t" + (db.sizeOnDisk / 1024 / 1024 / 1024).toFixed(3) + "GB") })
+db.getMongo().getDBs().databases.forEach(function(d) { print(d.name + "\t" + (d.sizeOnDisk / 1024 / 1024 / 1024).toFixed(3) + "GB") })
